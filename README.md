@@ -19,8 +19,12 @@ This repository demonstrates a software pattern to replace enum switch-case stat
 
 `GenericReflectionCompileSafeEnum` replaces the manual implemented switch-method with Java-Reflections. 
 
-### Problemes with Refelection
-The usage of Java reflections in `GenericReflectionCompileSafeEnum` looks like a good idea in the first place, but in practice, it introduces many problems.
-That's because of the reflection exceptions that could occur at runtime.
+### Problemes with the `GenericReflectionCompileSafeEnum`
 
-It is much easier to implement the switch-case method manually and write a simple test for this code. How such a test could look like could be found in `CompileSafeEnumTest` and in `GenericCompileSafeEnumTest`.
+The usage of Java reflections in `GenericReflectionCompileSafeEnum` looks like a good idea in the first place, but in practice, it introduces many problems.
+1. There are exceptions that must be handled.
+2. We still need a unit test to check if the method names match the enum names.
+3. And more important, we have a major performance overhead.
+
+The performance overhead is a show stopper for such a simple thing as a switch case.
+Because of these problems I highly recommend the `CompileSafeEnum` and `GenericCompileSafeEnum` versions.
