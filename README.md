@@ -28,3 +28,13 @@ The usage of Java reflections in `GenericReflectionCompileSafeEnum` looks like a
 
 The performance overhead is a show stopper for such a simple thing as a switch case.
 Because of these problems I highly recommend the `CompileSafeEnum` and `GenericCompileSafeEnum` versions.
+
+
+------
+Do you have any questions or suggestions? Get in touch with us:
+
+![digital frontiers](doc/img/logo_250x75.png)
+
+:globe_with_meridians: [https://www.digitalfrontiers.de](https://www.digitalfrontiers.de) \
+:email: info@digitalfrontiers.de \
+Twitter [@dxfrontiers](https://twitter.com/dxfrontiers)
